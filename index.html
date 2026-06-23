@@ -1,0 +1,2033 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      window["__codeletBootstrap__"] = JSON.parse(
+        '{"A":"A","B":"20260623-05-892e748"}',
+      );
+    </script>
+    <script
+      src="/_sdk/558340785a07a8b2.telemetry_sdk.js"
+      integrity="sha512-w6huTWybcELc18WJb0w+HZlX471QfzMUh7gbslB6onKoaFEogFDmOPMV5FcEo5/Ws8CyGWJgk7MOklfxKnVegA=="
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vistora Media &amp; Co. — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&amp;family=Archivo:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --charcoal: #15171a;
+        --charcoal-2: #1c1f23;
+        --ivory: #ede9e1;
+        --ivory-dim: #b8b3a8;
+        --gold: #a98d5c;
+        --gold-bright: #c9a96e;
+        --clay: #8b6f5c;
+        --hairline: #34373c;
+        --display: "Fraunces", serif;
+        --body: "Archivo", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--charcoal);
+        color: var(--ivory);
+        font-family: var(--body);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+
+      /* ---------- Frame counter motif ---------- */
+      .frame-tag {
+        font-family: var(--body);
+        font-size: 12.5px;
+        letter-spacing: 0.12em;
+        color: var(--gold-bright);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+      }
+      .frame-tag::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold-bright);
+        box-shadow: 0 0 8px var(--gold-bright);
+      }
+
+      /* ---------- Nav ---------- */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: rgba(21, 23, 26, 0.82);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--hairline);
+      }
+      nav.wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 78px;
+      }
+      .logo {
+        font-family: var(--display);
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+      }
+      .logo-mark {
+        flex-shrink: 0;
+        display: block;
+      }
+      .logo span {
+        color: var(--gold-bright);
+      }
+      .nav-links {
+        display: flex;
+        gap: 38px;
+      }
+      .nav-links a {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ivory-dim);
+        transition: color 0.25s ease;
+        position: relative;
+      }
+      .nav-links a:hover {
+        color: var(--ivory);
+      }
+      .nav-cta {
+        border: 1px solid var(--gold);
+        padding: 10px 22px;
+        font-size: 13px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 2px;
+        transition: all 0.25s ease;
+        white-space: nowrap;
+      }
+      .nav-cta:hover {
+        background: var(--gold);
+        color: var(--charcoal);
+      }
+      .mobile-only {
+        display: none;
+      }
+
+      /* ---------- Hero ---------- */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-top: 78px;
+      }
+
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 70% 55% at 75% 20%,
+            rgba(169, 141, 92, 0.14),
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 50% 40% at 10% 85%,
+            rgba(139, 111, 92, 0.1),
+            transparent 60%
+          );
+        pointer-events: none;
+      }
+
+      .hero-bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(237, 233, 225, 0.025) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(237, 233, 225, 0.025) 1px,
+            transparent 1px
+          );
+        background-size: 64px 64px;
+        mask-image: linear-gradient(
+          to bottom,
+          transparent,
+          black 30%,
+          black 70%,
+          transparent
+        );
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 2;
+        padding: 80px 0 70px;
+      }
+
+      .hero h1 {
+        font-family: var(--display);
+        font-weight: 400;
+        font-size: clamp(44px, 7.2vw, 92px);
+        line-height: 0.98;
+        letter-spacing: -0.01em;
+        max-width: 920px;
+        opacity: 0;
+        animation: riseIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+      }
+      .hero h1 em {
+        font-style: italic;
+        font-weight: 300;
+        color: var(--gold-bright);
+      }
+
+      .hero-sub {
+        margin-top: 28px;
+        max-width: 540px;
+        font-size: 17px;
+        line-height: 1.65;
+        color: var(--ivory-dim);
+        opacity: 0;
+        animation: riseIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.32s forwards;
+      }
+
+      .hero-actions {
+        margin-top: 42px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        opacity: 0;
+        animation: riseIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.46s forwards;
+      }
+
+      .btn-primary {
+        background: var(--gold);
+        color: var(--charcoal);
+        padding: 15px 30px;
+        font-size: 13.5px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-radius: 2px;
+        transition: all 0.25s ease;
+        display: inline-block;
+      }
+      .btn-primary:hover {
+        background: var(--gold-bright);
+        transform: translateY(-1px);
+      }
+
+      .btn-ghost {
+        color: var(--ivory);
+        font-size: 13.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 15px 8px;
+        border-bottom: 1px solid var(--hairline);
+        transition: border-color 0.25s ease;
+      }
+      .btn-ghost:hover {
+        border-color: var(--gold-bright);
+      }
+
+      @keyframes riseIn {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero-strip {
+        position: relative;
+        z-index: 2;
+        border-top: 1px solid var(--hairline);
+        padding: 26px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 48px;
+      }
+      .strip-item {
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        color: var(--ivory-dim);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .strip-item b {
+        color: var(--ivory);
+        font-weight: 500;
+      }
+      .strip-item::before {
+        content: "—";
+        color: var(--gold);
+      }
+
+      /* ---------- Section shell ---------- */
+      section {
+        padding: 130px 0;
+        position: relative;
+      }
+      .hairline-top {
+        border-top: 1px solid var(--hairline);
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 40px;
+        margin-bottom: 64px;
+        flex-wrap: wrap;
+      }
+      .section-head h2 {
+        font-family: var(--display);
+        font-weight: 400;
+        font-size: clamp(32px, 4vw, 50px);
+        line-height: 1.08;
+        max-width: 600px;
+      }
+      .section-head p {
+        max-width: 340px;
+        font-size: 14.5px;
+        line-height: 1.7;
+        color: var(--ivory-dim);
+        padding-bottom: 6px;
+      }
+
+      /* ---------- About ---------- */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .about-text p {
+        font-size: 16px;
+        line-height: 1.85;
+        color: var(--ivory-dim);
+        margin-bottom: 22px;
+      }
+      .about-text strong {
+        color: var(--ivory);
+        font-weight: 500;
+      }
+
+      .credentials {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .credential {
+        padding: 26px 0;
+        border-top: 1px solid var(--hairline);
+      }
+      .credential:last-child {
+        border-bottom: 1px solid var(--hairline);
+      }
+      .credential-num {
+        font-family: var(--display);
+        font-size: 15px;
+        color: var(--gold-bright);
+        margin-bottom: 10px;
+        letter-spacing: 0.02em;
+      }
+      .credential h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .credential p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--ivory-dim);
+      }
+
+      /* ---------- Services ---------- */
+      .services-wrap {
+        background: var(--charcoal-2);
+      }
+
+      .service-groups {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        background: var(--hairline);
+        border: 1px solid var(--hairline);
+      }
+
+      .service-group {
+        background: var(--charcoal-2);
+        padding: 44px 40px;
+      }
+
+      .service-group .frame-tag {
+        margin-bottom: 18px;
+      }
+
+      .service-group h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 22px;
+      }
+
+      .service-list {
+        list-style: none;
+      }
+      .service-list li {
+        font-size: 15px;
+        color: var(--ivory-dim);
+        padding: 12px 0;
+        border-top: 1px solid var(--hairline);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .service-list li:first-child {
+        border-top: none;
+      }
+      .service-list li::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: var(--gold);
+        flex-shrink: 0;
+      }
+
+      /* ---------- Work ---------- */
+      .work-category {
+        margin-bottom: 88px;
+      }
+      .work-category:last-child {
+        margin-bottom: 0;
+      }
+
+      .work-category-head {
+        display: flex;
+        align-items: baseline;
+        gap: 18px;
+        margin-bottom: 34px;
+      }
+      .work-category-head h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 28px;
+      }
+      .work-category-head .count {
+        font-size: 13px;
+        color: var(--ivory-dim);
+        letter-spacing: 0.04em;
+      }
+      .work-category-head .rule {
+        flex: 1;
+        height: 1px;
+        background: var(--hairline);
+      }
+
+      .work-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .work-grid.single-col {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+      }
+
+      .video-card {
+        position: relative;
+        background: linear-gradient(155deg, #23262b, #181a1d);
+        border: 1px solid var(--hairline);
+        border-radius: 3px;
+        overflow: hidden;
+        transition: border-color 0.35s ease;
+      }
+      .video-card:hover {
+        border-color: var(--gold);
+      }
+
+      .video-card.is-vertical {
+        aspect-ratio: 9/16;
+      }
+      .video-card.is-horizontal {
+        aspect-ratio: 16/9;
+      }
+
+      .video-card iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+
+      .vc-label {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 2;
+        font-size: 11px;
+        color: var(--gold-bright);
+        letter-spacing: 0.08em;
+        background: rgba(21, 23, 26, 0.55);
+        padding: 4px 9px;
+        border-radius: 2px;
+        pointer-events: none;
+        backdrop-filter: blur(4px);
+      }
+
+      /* ---------- Process ---------- */
+      .process-rail {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        border-top: 1px solid var(--hairline);
+        border-left: 1px solid var(--hairline);
+      }
+      .process-step {
+        border-right: 1px solid var(--hairline);
+        border-bottom: 1px solid var(--hairline);
+        padding: 38px 30px 44px;
+        position: relative;
+      }
+      .process-step .frame-tag {
+        margin-bottom: 30px;
+      }
+      .process-step h3 {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 21px;
+        margin-bottom: 12px;
+      }
+      .process-step p {
+        font-size: 14px;
+        line-height: 1.65;
+        color: var(--ivory-dim);
+      }
+
+      /* ---------- CTA / Contact ---------- */
+      .cta-section {
+        text-align: center;
+        padding: 150px 0 130px;
+      }
+      .cta-section h2 {
+        font-family: var(--display);
+        font-weight: 400;
+        font-size: clamp(34px, 5.5vw, 64px);
+        line-height: 1.08;
+        max-width: 780px;
+        margin: 0 auto 30px;
+      }
+      .cta-section h2 em {
+        font-style: italic;
+        color: var(--gold-bright);
+        font-weight: 300;
+      }
+      .cta-section .hero-sub {
+        margin: 0 auto 44px;
+        text-align: center;
+      }
+      .cta-row {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      /* ---------- Footer ---------- */
+      footer {
+        border-top: 1px solid var(--hairline);
+        padding: 36px 0;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .footer-row .logo {
+        font-size: 17px;
+      }
+      .footer-links {
+        display: flex;
+        gap: 28px;
+      }
+      .footer-links a {
+        font-size: 13px;
+        color: var(--ivory-dim);
+        letter-spacing: 0.04em;
+        transition: color 0.25s ease;
+      }
+      .footer-links a:hover {
+        color: var(--gold-bright);
+      }
+      .footer-copy {
+        font-size: 12.5px;
+        color: var(--ivory-dim);
+        opacity: 0.6;
+      }
+
+      /* ---------- Scroll reveal ---------- */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 880px) {
+        .nav-links {
+          display: none;
+        }
+        .wrap {
+          padding: 0 22px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .service-groups {
+          grid-template-columns: 1fr;
+        }
+        .work-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+        .process-rail {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        section {
+          padding: 90px 0;
+        }
+        .cta-section {
+          padding: 110px 0 90px;
+        }
+      }
+      @media (max-width: 560px) {
+        .work-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+        .hero-strip {
+          gap: 12px 28px;
+        }
+        .footer-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+    <script
+      src="/_sdk/4f463046f01e739c.resizing_sdk.js"
+      integrity="sha512-OGc2bZH1Y6D53dobLIprnf87bgcAUXhOSYQ1OhcaN/Jy2cDLElITNEl2Qopej2NN/r19T/IbMrsIB0GWsE/X9w=="
+    ></script>
+  </head>
+  <body
+    data-html-import-id="html-import-0"
+    data-template-id="__page-root"
+    style="background: rgb(21, 23, 26)"
+  >
+    <header
+      data-html-import-id="html-import-1"
+      data-template-id="header-0"
+      class="canva-header"
+      style="background: rgba(21, 23, 26, 0.82)"
+    >
+      <nav class="wrap" data-html-import-id="html-import-2">
+        <div class="logo" data-html-import-id="html-import-3">
+          <svg
+            class="logo-mark"
+            width="22"
+            height="22"
+            viewBox="0 0 48 48"
+            data-html-import-id="html-import-4"
+          >
+            <path
+              d="M8 10 L24 38 L40 10"
+              fill="none"
+              stroke="#A98D5C"
+              stroke-width="3.4"
+              stroke-linecap="square"
+              data-html-import-id="html-import-5"
+            ></path>
+            <path
+              d="M19 10 L24 19"
+              fill="none"
+              stroke="#EDE9E1"
+              stroke-width="3.4"
+              stroke-linecap="square"
+              data-html-import-id="html-import-6"
+            ></path></svg
+          ><canva-inline-text
+            data-template-id="canva-inline-text-1"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 500;
+              font-size: 21px;
+            "
+            >Vistora</canva-inline-text
+          ><span
+            data-html-import-id="html-import-7"
+            data-template-id="span-2"
+            class="canva-text"
+            style="color: rgb(201, 169, 110)"
+            >Media &amp; Co.</span
+          >
+        </div>
+        <div class="nav-links" data-html-import-id="html-import-8">
+          <a
+            href="#about"
+            data-html-import-id="html-import-9"
+            data-template-id="a-3"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >STUDIO</a
+          >
+          <a
+            href="#services"
+            data-html-import-id="html-import-10"
+            data-template-id="a-4"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >SERVICES</a
+          >
+          <a
+            href="#work"
+            data-html-import-id="html-import-11"
+            data-template-id="a-5"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >WORK</a
+          >
+          <a
+            href="#process"
+            data-html-import-id="html-import-12"
+            data-template-id="a-6"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >PROCESS</a
+          >
+        </div>
+        <a
+          href="#contact"
+          class="nav-cta canva-link"
+          data-html-import-id="html-import-13"
+          data-template-id="a-7"
+          style="color: rgb(237, 233, 225); font-size: 13px"
+          >START A PROJECT</a
+        >
+      </nav>
+    </header>
+
+    <section class="hero" data-html-import-id="html-import-14">
+      <div class="hero-bg" data-html-import-id="html-import-15"></div>
+      <div class="wrap hero-inner" data-html-import-id="html-import-16">
+        <h1
+          data-html-import-id="html-import-17"
+          data-template-id="h1-8"
+          class="canva-text"
+          style="
+            color: rgb(237, 233, 225);
+            font-family: Fraunces;
+            font-weight: 400;
+            font-size: 91px;
+          "
+        >
+          <canva-inline-text
+            data-template-id="canva-inline-text-9"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 400;
+              font-size: 91px;
+            "
+            >Edits that turn raw footage into </canva-inline-text
+          ><em
+            data-html-import-id="html-import-18"
+            data-template-id="em-10"
+            class="canva-text"
+            style="
+              color: rgb(201, 169, 110);
+              font-weight: 300;
+              font-style: italic;
+            "
+            >stories worth watching.</em
+          >
+        </h1>
+        <p
+          class="hero-sub canva-text"
+          data-html-import-id="html-import-19"
+          data-template-id="p-11"
+          style="color: rgb(184, 179, 168); font-size: 17px"
+        >
+          Vistora Media &amp; Co. is a video editing studio built on detail,
+          pacing, and color. We turn raw footage into film, whatever the
+          subject.
+        </p>
+        <div class="hero-actions" data-html-import-id="html-import-20">
+          <a
+            href="#work"
+            class="btn-primary canva-link"
+            data-html-import-id="html-import-21"
+            data-template-id="a-12"
+            style="
+              background: rgb(169, 141, 92);
+              color: rgb(21, 23, 26);
+              font-weight: 600;
+              font-size: 14px;
+            "
+            >VIEW OUR WORK</a
+          >
+          <a
+            href="#contact"
+            class="btn-ghost canva-link"
+            data-html-import-id="html-import-22"
+            data-template-id="a-13"
+            style="color: rgb(237, 233, 225); font-size: 14px"
+            >GET IN TOUCH</a
+          >
+        </div>
+      </div>
+      <div class="wrap hero-strip" data-html-import-id="html-import-23">
+        <div
+          class="strip-item canva-container"
+          data-html-import-id="html-import-24"
+          data-template-id="div-14"
+          style="color: rgb(184, 179, 168); font-size: 13px"
+        >
+          <b
+            data-html-import-id="html-import-25"
+            data-template-id="b-15"
+            class="canva-text"
+            style="color: rgb(237, 233, 225); font-weight: 500"
+            >3+ yrs</b
+          ><canva-inline-text
+            data-template-id="canva-inline-text-16"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >&nbsp;editing experience</canva-inline-text
+          >
+        </div>
+        <div
+          class="strip-item canva-container"
+          data-html-import-id="html-import-26"
+          data-template-id="div-17"
+          style="color: rgb(184, 179, 168); font-size: 13px"
+        >
+          <canva-inline-text
+            data-template-id="canva-inline-text-18"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Real estate · Brand ·</canva-inline-text
+          ><b
+            data-html-import-id="html-import-27"
+            data-template-id="b-19"
+            class="canva-text"
+            style="color: rgb(237, 233, 225); font-weight: 500"
+            >Social content</b
+          >
+        </div>
+        <div
+          class="strip-item canva-container"
+          data-html-import-id="html-import-28"
+          data-template-id="div-20"
+          style="color: rgb(184, 179, 168); font-size: 13px"
+        >
+          <canva-inline-text
+            data-template-id="canva-inline-text-21"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Color · Motion ·</canva-inline-text
+          ><b
+            data-html-import-id="html-import-29"
+            data-template-id="b-22"
+            class="canva-text"
+            style="color: rgb(237, 233, 225); font-weight: 500"
+            >Sound design</b
+          >
+        </div>
+        <div
+          class="strip-item canva-container"
+          data-html-import-id="html-import-30"
+          data-template-id="div-23"
+          style="color: rgb(184, 179, 168); font-size: 13px"
+        >
+          <b
+            data-html-import-id="html-import-31"
+            data-template-id="b-24"
+            class="canva-text"
+            style="color: rgb(237, 233, 225); font-weight: 500"
+            >International</b
+          ><canva-inline-text
+            data-template-id="canva-inline-text-25"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >brand work</canva-inline-text
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="hairline-top reveal"
+      data-html-import-id="html-import-32"
+    >
+      <div class="wrap" data-html-import-id="html-import-33">
+        <div class="about-grid" data-html-import-id="html-import-34">
+          <div class="about-text" data-html-import-id="html-import-35">
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-36"
+              data-template-id="span-26"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >00:01 — THE STUDIO</span
+            >
+            <p
+              data-html-import-id="html-import-37"
+              data-template-id="p-27"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 16px"
+            >
+              <canva-inline-text
+                data-template-id="canva-inline-text-28"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 16px"
+                >Vistora Media &amp; Co. is a video editing agency built around
+                one belief: </canva-inline-text
+              ><strong
+                data-html-import-id="html-import-38"
+                data-template-id="strong-29"
+                class="canva-text"
+                style="color: rgb(237, 233, 225); font-weight: 500"
+                >the edit is where the story actually gets told.</strong
+              ><canva-inline-text
+                data-template-id="canva-inline-text-30"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 16px"
+              >
+                Great footage is only the raw material — pacing, color, sound,
+                and rhythm are what turn it into something people stop scrolling
+                for.</canva-inline-text
+              >
+            </p>
+            <p
+              data-html-import-id="html-import-39"
+              data-template-id="p-31"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 16px"
+            >
+              <canva-inline-text
+                data-template-id="canva-inline-text-32"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 16px"
+                >We bring </canva-inline-text
+              ><strong
+                data-html-import-id="html-import-40"
+                data-template-id="strong-33"
+                class="canva-text"
+                style="color: rgb(237, 233, 225); font-weight: 500"
+                >3+ years of experience editing for international brands</strong
+              ><canva-inline-text
+                data-template-id="canva-inline-text-34"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 16px"
+              >
+                to every project we take on — from property walkthroughs and
+                listing videos to brand content, social reels, and everything in
+                between.</canva-inline-text
+              >
+            </p>
+            <p
+              data-html-import-id="html-import-41"
+              data-template-id="p-35"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 16px"
+            >
+              We work closely with every client to understand exactly what the
+              footage needs to say, then cut it with the same discipline and
+              attention to detail, no matter the subject.
+            </p>
+          </div>
+          <div class="credentials" data-html-import-id="html-import-42">
+            <div class="credential" data-html-import-id="html-import-43">
+              <div
+                class="credential-num canva-container"
+                data-html-import-id="html-import-44"
+                data-template-id="div-36"
+                style="
+                  color: rgb(201, 169, 110);
+                  font-family: Fraunces;
+                  font-size: 15px;
+                "
+              >
+                00:02
+              </div>
+              <h3
+                data-html-import-id="html-import-45"
+                data-template-id="h3-37"
+                class="canva-text"
+                style="
+                  color: rgb(237, 233, 225);
+                  font-family: Fraunces;
+                  font-weight: 500;
+                  font-size: 20px;
+                "
+              >
+                Editing-first team
+              </h3>
+              <p
+                data-html-import-id="html-import-46"
+                data-template-id="p-38"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 14px"
+              >
+                A dedicated team with 3+ years of professional experience,
+                focused entirely on craft.
+              </p>
+            </div>
+            <div class="credential" data-html-import-id="html-import-47">
+              <div
+                class="credential-num canva-container"
+                data-html-import-id="html-import-48"
+                data-template-id="div-39"
+                style="
+                  color: rgb(201, 169, 110);
+                  font-family: Fraunces;
+                  font-size: 15px;
+                "
+              >
+                00:03
+              </div>
+              <h3
+                data-html-import-id="html-import-49"
+                data-template-id="h3-40"
+                class="canva-text"
+                style="
+                  color: rgb(237, 233, 225);
+                  font-family: Fraunces;
+                  font-weight: 500;
+                  font-size: 20px;
+                "
+              >
+                One point of contact
+              </h3>
+              <p
+                data-html-import-id="html-import-50"
+                data-template-id="p-41"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 14px"
+              >
+                A single coordinator manages every brief, revision, and deadline
+                — so nothing gets lost in translation.
+              </p>
+            </div>
+            <div class="credential" data-html-import-id="html-import-51">
+              <div
+                class="credential-num canva-container"
+                data-html-import-id="html-import-52"
+                data-template-id="div-42"
+                style="
+                  color: rgb(201, 169, 110);
+                  font-family: Fraunces;
+                  font-size: 15px;
+                "
+              >
+                00:04
+              </div>
+              <h3
+                data-html-import-id="html-import-53"
+                data-template-id="h3-43"
+                class="canva-text"
+                style="
+                  color: rgb(237, 233, 225);
+                  font-family: Fraunces;
+                  font-weight: 500;
+                  font-size: 20px;
+                "
+              >
+                Built for range
+              </h3>
+              <p
+                data-html-import-id="html-import-54"
+                data-template-id="p-44"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 14px"
+              >
+                Real estate, brand, and social content — edited with pacing that
+                matches how each audience actually watches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="services"
+      class="services-wrap hairline-top reveal canva-section"
+      data-html-import-id="html-import-55"
+      data-template-id="section-45"
+      style="background: rgb(28, 31, 35)"
+    >
+      <div class="wrap" data-html-import-id="html-import-56">
+        <div class="section-head" data-html-import-id="html-import-57">
+          <h2
+            data-html-import-id="html-import-58"
+            data-template-id="h2-46"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 400;
+              font-size: 50px;
+            "
+          >
+            What we do, frame by frame.
+          </h2>
+          <p
+            data-html-import-id="html-import-59"
+            data-template-id="p-47"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 15px"
+          >
+            From the first cut to the final mix — everything a video needs to
+            feel finished, not just edited.
+          </p>
+        </div>
+      </div>
+      <div
+        class="wrap"
+        style="padding: 0 32px"
+        data-html-import-id="html-import-60"
+      >
+        <div
+          class="service-groups canva-container"
+          data-html-import-id="html-import-61"
+          data-template-id="div-48"
+          style="background: rgb(52, 55, 60)"
+        >
+          <div
+            class="service-group canva-container"
+            data-html-import-id="html-import-62"
+            data-template-id="div-49"
+            style="background: rgb(28, 31, 35)"
+          >
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-63"
+              data-template-id="span-50"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >REAL ESTATE &amp; PROPERTY</span
+            >
+            <h3
+              data-html-import-id="html-import-64"
+              data-template-id="h3-51"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 25px;
+              "
+            >
+              Listings that show, not just tell.
+            </h3>
+            <ul class="service-list" data-html-import-id="html-import-65">
+              <li
+                data-html-import-id="html-import-66"
+                data-template-id="li-52"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Property walkthroughs
+              </li>
+              <li
+                data-html-import-id="html-import-67"
+                data-template-id="li-53"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Home tour videos
+              </li>
+              <li
+                data-html-import-id="html-import-68"
+                data-template-id="li-54"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Listing videos
+              </li>
+              <li
+                data-html-import-id="html-import-69"
+                data-template-id="li-55"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Drone footage editing
+              </li>
+            </ul>
+          </div>
+          <div
+            class="service-group canva-container"
+            data-html-import-id="html-import-70"
+            data-template-id="div-56"
+            style="background: rgb(28, 31, 35)"
+          >
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-71"
+              data-template-id="span-57"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >SOCIAL &amp; CONTENT</span
+            >
+            <h3
+              data-html-import-id="html-import-72"
+              data-template-id="h3-58"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 25px;
+              "
+            >
+              Built for how people actually watch.
+            </h3>
+            <ul class="service-list" data-html-import-id="html-import-73">
+              <li
+                data-html-import-id="html-import-74"
+                data-template-id="li-59"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                YouTube videos
+              </li>
+              <li
+                data-html-import-id="html-import-75"
+                data-template-id="li-60"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Instagram reels
+              </li>
+              <li
+                data-html-import-id="html-import-76"
+                data-template-id="li-61"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Short-form content cuts
+              </li>
+              <li
+                data-html-import-id="html-import-77"
+                data-template-id="li-62"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Channel-ready formatting
+              </li>
+            </ul>
+          </div>
+          <div
+            class="service-group canva-container"
+            data-html-import-id="html-import-78"
+            data-template-id="div-63"
+            style="background: rgb(28, 31, 35)"
+          >
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-79"
+              data-template-id="span-64"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >COLOR</span
+            >
+            <h3
+              data-html-import-id="html-import-80"
+              data-template-id="h3-65"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 25px;
+              "
+            >
+              Mood, set deliberately.
+            </h3>
+            <ul class="service-list" data-html-import-id="html-import-81">
+              <li
+                data-html-import-id="html-import-82"
+                data-template-id="li-66"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Color correction
+              </li>
+              <li
+                data-html-import-id="html-import-83"
+                data-template-id="li-67"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Color grading
+              </li>
+            </ul>
+          </div>
+          <div
+            class="service-group canva-container"
+            data-html-import-id="html-import-84"
+            data-template-id="div-68"
+            style="background: rgb(28, 31, 35)"
+          >
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-85"
+              data-template-id="span-69"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >CRAFT &amp; FINISHING</span
+            >
+            <h3
+              data-html-import-id="html-import-86"
+              data-template-id="h3-70"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 25px;
+              "
+            >
+              The details that don't go unnoticed.
+            </h3>
+            <ul class="service-list" data-html-import-id="html-import-87">
+              <li
+                data-html-import-id="html-import-88"
+                data-template-id="li-71"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Motion graphics
+              </li>
+              <li
+                data-html-import-id="html-import-89"
+                data-template-id="li-72"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Smooth transitions
+              </li>
+              <li
+                data-html-import-id="html-import-90"
+                data-template-id="li-73"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Sound design &amp; audio mixing
+              </li>
+              <li
+                data-html-import-id="html-import-91"
+                data-template-id="li-74"
+                class="canva-text"
+                style="color: rgb(184, 179, 168); font-size: 15px"
+              >
+                Subtitles &amp; captions
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="work"
+      class="hairline-top reveal"
+      data-html-import-id="html-import-92"
+    >
+      <div class="wrap" data-html-import-id="html-import-93">
+        <div class="section-head" data-html-import-id="html-import-94">
+          <h2
+            data-html-import-id="html-import-95"
+            data-template-id="h2-75"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 400;
+              font-size: 50px;
+            "
+          >
+            Selected work.
+          </h2>
+          <p
+            data-html-import-id="html-import-96"
+            data-template-id="p-76"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 15px"
+          >
+            A look at what we've cut — across real estate, brand, and lifestyle
+            content.
+          </p>
+        </div>
+
+        <div class="work-category" data-html-import-id="html-import-97">
+          <div class="work-category-head" data-html-import-id="html-import-98">
+            <h3
+              data-html-import-id="html-import-99"
+              data-template-id="h3-77"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 28px;
+              "
+            >
+              Real Estate
+            </h3>
+            <div
+              class="rule canva-container"
+              data-html-import-id="html-import-100"
+              data-template-id="div-78"
+              style="background: rgb(52, 55, 60)"
+            ></div>
+            <span
+              class="count canva-text"
+              data-html-import-id="html-import-101"
+              data-template-id="span-79"
+              style="color: rgb(184, 179, 168); font-size: 13px"
+              >03</span
+            >
+          </div>
+          <div class="work-grid" data-html-import-id="html-import-102">
+            <div
+              class="video-card is-vertical"
+              data-html-import-id="html-import-103"
+            >
+              <span
+                class="vc-label canva-text"
+                data-html-import-id="html-import-104"
+                data-template-id="span-80"
+                style="
+                  background: rgba(21, 23, 26, 0.55);
+                  color: rgb(201, 169, 110);
+                  font-size: 11px;
+                "
+                >RE / 01</span
+              >
+              <iframe
+                src="https://drive.google.com/file/d/1P6QrgPuooFOttSPW3teQDQCj6mWwO2Ky/preview"
+                allow="autoplay"
+                allowfullscreen=""
+                data-html-import-id="html-import-105"
+              ></iframe>
+            </div>
+            <div
+              class="video-card is-vertical"
+              data-html-import-id="html-import-106"
+            >
+              <span
+                class="vc-label canva-text"
+                data-html-import-id="html-import-107"
+                data-template-id="span-81"
+                style="
+                  background: rgba(21, 23, 26, 0.55);
+                  color: rgb(201, 169, 110);
+                  font-size: 11px;
+                "
+                >RE / 02</span
+              >
+              <iframe
+                src="https://drive.google.com/file/d/1_kbDeKgPeDpBNGtBVIG51225ijeR6Xut/preview"
+                allow="autoplay"
+                allowfullscreen=""
+                data-html-import-id="html-import-108"
+              ></iframe>
+            </div>
+            <div
+              class="video-card is-vertical"
+              data-html-import-id="html-import-109"
+            >
+              <span
+                class="vc-label canva-text"
+                data-html-import-id="html-import-110"
+                data-template-id="span-82"
+                style="
+                  background: rgba(21, 23, 26, 0.55);
+                  color: rgb(201, 169, 110);
+                  font-size: 11px;
+                "
+                >RE / 03</span
+              >
+              <iframe
+                src="https://drive.google.com/file/d/1jHsfLmCHXS5eBmph6lWJE8su0t04DPPD/preview"
+                allow="autoplay"
+                allowfullscreen=""
+                data-html-import-id="html-import-111"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-category" data-html-import-id="html-import-112">
+          <div class="work-category-head" data-html-import-id="html-import-113">
+            <h3
+              data-html-import-id="html-import-114"
+              data-template-id="h3-83"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 28px;
+              "
+            >
+              Brand &amp; Lifestyle
+            </h3>
+            <div
+              class="rule canva-container"
+              data-html-import-id="html-import-115"
+              data-template-id="div-84"
+              style="background: rgb(52, 55, 60)"
+            ></div>
+            <span
+              class="count canva-text"
+              data-html-import-id="html-import-116"
+              data-template-id="span-85"
+              style="color: rgb(184, 179, 168); font-size: 13px"
+              >01</span
+            >
+          </div>
+          <div
+            class="work-grid"
+            style="grid-template-columns: repeat(3, 1fr); max-width: none"
+            data-html-import-id="html-import-117"
+          >
+            <div
+              class="video-card is-vertical"
+              data-html-import-id="html-import-118"
+            >
+              <span
+                class="vc-label canva-text"
+                data-html-import-id="html-import-119"
+                data-template-id="span-86"
+                style="
+                  background: rgba(21, 23, 26, 0.55);
+                  color: rgb(201, 169, 110);
+                  font-size: 11px;
+                "
+                >BL / 01</span
+              >
+              <iframe
+                src="https://drive.google.com/file/d/1NnH8tsun-Uuv9y4B8WS4i9x0JJ2z7LjF/preview"
+                allow="autoplay"
+                allowfullscreen=""
+                data-html-import-id="html-import-120"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="process"
+      class="hairline-top reveal"
+      data-html-import-id="html-import-121"
+    >
+      <div class="wrap" data-html-import-id="html-import-122">
+        <div class="section-head" data-html-import-id="html-import-123">
+          <h2
+            data-html-import-id="html-import-124"
+            data-template-id="h2-87"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 400;
+              font-size: 50px;
+            "
+          >
+            How a project moves.
+          </h2>
+          <p
+            data-html-import-id="html-import-125"
+            data-template-id="p-88"
+            class="canva-text"
+            style="color: rgb(184, 179, 168); font-size: 15px"
+          >
+            A simple, predictable process — so you always know what happens
+            next.
+          </p>
+        </div>
+        <div class="process-rail" data-html-import-id="html-import-126">
+          <div class="process-step" data-html-import-id="html-import-127">
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-128"
+              data-template-id="span-89"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >00:01</span
+            >
+            <h3
+              data-html-import-id="html-import-129"
+              data-template-id="h3-90"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 21px;
+              "
+            >
+              Brief
+            </h3>
+            <p
+              data-html-import-id="html-import-130"
+              data-template-id="p-91"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 14px"
+            >
+              We talk through the footage, the goal, and the tone — then confirm
+              scope and timeline before anything starts.
+            </p>
+          </div>
+          <div class="process-step" data-html-import-id="html-import-131">
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-132"
+              data-template-id="span-92"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >00:02</span
+            >
+            <h3
+              data-html-import-id="html-import-133"
+              data-template-id="h3-93"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 21px;
+              "
+            >
+              Edit
+            </h3>
+            <p
+              data-html-import-id="html-import-134"
+              data-template-id="p-94"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 14px"
+            >
+              Your footage goes to the editor best suited to it. Pacing, color,
+              and sound are built around your brief.
+            </p>
+          </div>
+          <div class="process-step" data-html-import-id="html-import-135">
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-136"
+              data-template-id="span-95"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >00:03</span
+            >
+            <h3
+              data-html-import-id="html-import-137"
+              data-template-id="h3-96"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 21px;
+              "
+            >
+              Review
+            </h3>
+            <p
+              data-html-import-id="html-import-138"
+              data-template-id="p-97"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 14px"
+            >
+              You see a cut, share notes, and we refine. Revisions are part of
+              the process, not an afterthought.
+            </p>
+          </div>
+          <div class="process-step" data-html-import-id="html-import-139">
+            <span
+              class="frame-tag canva-text"
+              data-html-import-id="html-import-140"
+              data-template-id="span-98"
+              style="
+                color: rgb(201, 169, 110);
+                font-family: Archivo;
+                font-size: 13px;
+              "
+              >00:04</span
+            >
+            <h3
+              data-html-import-id="html-import-141"
+              data-template-id="h3-99"
+              class="canva-text"
+              style="
+                color: rgb(237, 233, 225);
+                font-family: Fraunces;
+                font-weight: 500;
+                font-size: 21px;
+              "
+            >
+              Deliver
+            </h3>
+            <p
+              data-html-import-id="html-import-142"
+              data-template-id="p-100"
+              class="canva-text"
+              style="color: rgb(184, 179, 168); font-size: 14px"
+            >
+              Final files, formatted for wherever they're going — listing site,
+              Instagram, YouTube, or client handoff.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="hairline-top cta-section reveal"
+      data-html-import-id="html-import-143"
+    >
+      <div class="wrap" data-html-import-id="html-import-144">
+        <span
+          class="frame-tag canva-text"
+          style="
+            justify-content: center;
+            color: rgb(201, 169, 110);
+            font-family: Archivo;
+            font-size: 13px;
+          "
+          data-html-import-id="html-import-145"
+          data-template-id="span-101"
+          >00:05 — LET'S TALK</span
+        >
+        <h2
+          data-html-import-id="html-import-146"
+          data-template-id="h2-102"
+          class="canva-text"
+          style="
+            color: rgb(237, 233, 225);
+            font-family: Fraunces;
+            font-weight: 400;
+            font-size: 64px;
+          "
+        >
+          <canva-inline-text
+            data-template-id="canva-inline-text-103"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 400;
+              font-size: 64px;
+            "
+            >Have footage that deserves </canva-inline-text
+          ><em
+            data-html-import-id="html-import-147"
+            data-template-id="em-104"
+            class="canva-text"
+            style="
+              color: rgb(201, 169, 110);
+              font-weight: 300;
+              font-style: italic;
+            "
+            >a real edit?</em
+          >
+        </h2>
+        <p
+          class="hero-sub canva-text"
+          data-html-import-id="html-import-148"
+          data-template-id="p-105"
+          style="color: rgb(184, 179, 168); font-size: 17px"
+        >
+          Tell us what you're working on — a listing, a launch, a channel — and
+          we'll tell you how we'd cut it.
+        </p>
+        <div class="cta-row" data-html-import-id="html-import-149">
+          <a
+            href="mailto:vistoramediaconnect@gmail.com"
+            class="btn-primary canva-link"
+            data-html-import-id="html-import-150"
+            data-template-id="a-106"
+            style="
+              background: rgb(169, 141, 92);
+              color: rgb(21, 23, 26);
+              font-weight: 600;
+              font-size: 14px;
+            "
+            >EMAIL US</a
+          >
+          <a
+            href="#"
+            class="btn-ghost canva-link"
+            data-html-import-id="html-import-151"
+            data-template-id="a-107"
+            style="color: rgb(237, 233, 225); font-size: 14px"
+            >MESSAGE US ON WHATSAPP</a
+          >
+        </div>
+        <p
+          style="
+            margin-top: 28px;
+            font-size: 14px;
+            color: rgb(184, 179, 168);
+            letter-spacing: 0.02em;
+          "
+          data-html-import-id="html-import-152"
+          data-template-id="p-108"
+          class="canva-text"
+        >
+          vistoramediaconnect@gmail.com
+        </p>
+      </div>
+    </section>
+
+    <footer data-html-import-id="html-import-153">
+      <div class="wrap footer-row" data-html-import-id="html-import-154">
+        <div class="logo" data-html-import-id="html-import-155">
+          <svg
+            class="logo-mark"
+            width="18"
+            height="18"
+            viewBox="0 0 48 48"
+            data-html-import-id="html-import-156"
+          >
+            <path
+              d="M8 10 L24 38 L40 10"
+              fill="none"
+              stroke="#A98D5C"
+              stroke-width="3.4"
+              stroke-linecap="square"
+              data-html-import-id="html-import-157"
+            ></path>
+            <path
+              d="M19 10 L24 19"
+              fill="none"
+              stroke="#EDE9E1"
+              stroke-width="3.4"
+              stroke-linecap="square"
+              data-html-import-id="html-import-158"
+            ></path></svg
+          ><canva-inline-text
+            data-template-id="canva-inline-text-109"
+            class="canva-text"
+            style="
+              color: rgb(237, 233, 225);
+              font-family: Fraunces;
+              font-weight: 500;
+              font-size: 17px;
+            "
+            >Vistora</canva-inline-text
+          ><span
+            data-html-import-id="html-import-159"
+            data-template-id="span-110"
+            class="canva-text"
+            style="color: rgb(201, 169, 110)"
+            >Media &amp; Co.</span
+          >
+        </div>
+        <div class="footer-links" data-html-import-id="html-import-160">
+          <a
+            href="#about"
+            data-html-import-id="html-import-161"
+            data-template-id="a-111"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Studio</a
+          >
+          <a
+            href="#services"
+            data-html-import-id="html-import-162"
+            data-template-id="a-112"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Services</a
+          >
+          <a
+            href="#work"
+            data-html-import-id="html-import-163"
+            data-template-id="a-113"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Work</a
+          >
+          <a
+            href="#contact"
+            data-html-import-id="html-import-164"
+            data-template-id="a-114"
+            class="canva-link"
+            style="color: rgb(184, 179, 168); font-size: 13px"
+            >Contact</a
+          >
+        </div>
+        <div
+          class="footer-copy canva-container"
+          data-html-import-id="html-import-165"
+          data-template-id="div-115"
+          style="color: rgb(184, 179, 168); font-size: 13px"
+        >
+          © 2026 Vistora Media &amp; Co.
+        </div>
+      </div>
+    </footer>
+
+    <script data-html-import-id="html-import-166">
+      const reveals = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      reveals.forEach((el) => io.observe(el));
+    </script>
+
+    <script
+      src="/_sdk/af9aec02508dd970.editing_sdk.js"
+      integrity="sha512-fsy2Z3UbJmnouhVbv0VqJVrV0hyi1IuWxdqGzSzAFvoFOz70AMGtneepS8GQ7l9Gn8E+gxDThKQ4COjMQn6RKA=="
+    ></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'a1020abb338c4832',t:'MTc4MjIwMjQ5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
