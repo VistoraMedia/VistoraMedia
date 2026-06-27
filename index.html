@@ -474,6 +474,72 @@
         background: var(--hairline);
       }
 
+      /* ---------- Video Carousel ---------- */
+      .video-carousel-wrap {
+        position: relative;
+      }
+      .video-carousel {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 8px;
+        cursor: grab;
+      }
+      .video-carousel:active {
+        cursor: grabbing;
+      }
+      .video-carousel::-webkit-scrollbar {
+        display: none;
+      }
+      .video-carousel .video-card {
+        flex: 0 0 calc(33.333% - 14px);
+        scroll-snap-align: start;
+      }
+      .carousel-controls {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .carousel-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid var(--hairline);
+        background: var(--charcoal-2);
+        color: var(--ivory);
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.25s ease, background 0.25s ease;
+        flex-shrink: 0;
+      }
+      .carousel-btn:hover {
+        border-color: var(--gold);
+        background: rgba(169,141,92,0.12);
+      }
+      .carousel-dots {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .carousel-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--hairline);
+        transition: background 0.25s ease, transform 0.25s ease;
+        cursor: pointer;
+      }
+      .carousel-dot.active {
+        background: var(--gold-bright);
+        transform: scale(1.3);
+      }
       .work-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -651,6 +717,9 @@
           grid-template-columns: repeat(2, 1fr);
           gap: 16px;
         }
+        .video-carousel .video-card {
+          flex: 0 0 calc(50% - 10px);
+        }
         .process-rail {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -665,6 +734,9 @@
         .work-grid {
           grid-template-columns: repeat(2, 1fr);
           gap: 12px;
+        }
+        .video-carousel .video-card {
+          flex: 0 0 calc(85% - 10px);
         }
         .hero-strip {
           gap: 12px 28px;
@@ -1477,75 +1549,40 @@
               data-html-import-id="html-import-101"
               data-template-id="span-79"
               style="color: rgb(184, 179, 168); font-size: 13px"
-              >03</span
+              >06</span
             >
           </div>
-          <div class="work-grid" data-html-import-id="html-import-102">
-            <div
-              class="video-card is-vertical"
-              data-html-import-id="html-import-103"
-            >
-              <span
-                class="vc-label canva-text"
-                data-html-import-id="html-import-104"
-                data-template-id="span-80"
-                style="
-                  background: rgba(21, 23, 26, 0.55);
-                  color: rgb(201, 169, 110);
-                  font-size: 11px;
-                "
-                >RE / 01</span
-              >
-              <iframe
-                src="https://drive.google.com/file/d/1P6QrgPuooFOttSPW3teQDQCj6mWwO2Ky/preview"
-                allow="autoplay"
-                allowfullscreen=""
-                data-html-import-id="html-import-105"
-              ></iframe>
+          <div class="video-carousel-wrap">
+            <div class="video-carousel" id="re-carousel">
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 01</span>
+                <iframe src="https://drive.google.com/file/d/1_kbDeKgPeDpBNGtBVIG51225ijeR6Xut/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 02</span>
+                <iframe src="https://drive.google.com/file/d/1kg9qPJswr2FDzK88MbrxirZMOa6Gtah6/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 03</span>
+                <iframe src="https://drive.google.com/file/d/1W7-5JAkSMcUIoud3PzAlGA1nrmDHlKTD/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 04</span>
+                <iframe src="https://drive.google.com/file/d/1UT4H4WdLe6asB4q9FPJCk0vKNXNQcfxu/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 05</span>
+                <iframe src="https://drive.google.com/file/d/1P6QrgPuooFOttSPW3teQDQCj6mWwO2Ky/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">RE / 06</span>
+                <iframe src="https://drive.google.com/file/d/1jHsfLmCHXS5eBmph6lWJE8su0t04DPPD/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
             </div>
-            <div
-              class="video-card is-vertical"
-              data-html-import-id="html-import-106"
-            >
-              <span
-                class="vc-label canva-text"
-                data-html-import-id="html-import-107"
-                data-template-id="span-81"
-                style="
-                  background: rgba(21, 23, 26, 0.55);
-                  color: rgb(201, 169, 110);
-                  font-size: 11px;
-                "
-                >RE / 02</span
-              >
-              <iframe
-                src="https://drive.google.com/file/d/1_kbDeKgPeDpBNGtBVIG51225ijeR6Xut/preview"
-                allow="autoplay"
-                allowfullscreen=""
-                data-html-import-id="html-import-108"
-              ></iframe>
-            </div>
-            <div
-              class="video-card is-vertical"
-              data-html-import-id="html-import-109"
-            >
-              <span
-                class="vc-label canva-text"
-                data-html-import-id="html-import-110"
-                data-template-id="span-82"
-                style="
-                  background: rgba(21, 23, 26, 0.55);
-                  color: rgb(201, 169, 110);
-                  font-size: 11px;
-                "
-                >RE / 03</span
-              >
-              <iframe
-                src="https://drive.google.com/file/d/1jHsfLmCHXS5eBmph6lWJE8su0t04DPPD/preview"
-                allow="autoplay"
-                allowfullscreen=""
-                data-html-import-id="html-import-111"
-              ></iframe>
+            <div class="carousel-controls">
+              <button class="carousel-btn" onclick="scrollCarousel('re-carousel', -1)" aria-label="Previous">&#8592;</button>
+              <div class="carousel-dots" id="re-dots"></div>
+              <button class="carousel-btn" onclick="scrollCarousel('re-carousel', 1)" aria-label="Next">&#8594;</button>
             </div>
           </div>
         </div>
@@ -1576,35 +1613,36 @@
               data-html-import-id="html-import-116"
               data-template-id="span-85"
               style="color: rgb(184, 179, 168); font-size: 13px"
-              >01</span
+              >05</span
             >
           </div>
-          <div
-            class="work-grid"
-            style="grid-template-columns: repeat(3, 1fr); max-width: none"
-            data-html-import-id="html-import-117"
-          >
-            <div
-              class="video-card is-vertical"
-              data-html-import-id="html-import-118"
-            >
-              <span
-                class="vc-label canva-text"
-                data-html-import-id="html-import-119"
-                data-template-id="span-86"
-                style="
-                  background: rgba(21, 23, 26, 0.55);
-                  color: rgb(201, 169, 110);
-                  font-size: 11px;
-                "
-                >BL / 01</span
-              >
-              <iframe
-                src="https://drive.google.com/file/d/1NnH8tsun-Uuv9y4B8WS4i9x0JJ2z7LjF/preview"
-                allow="autoplay"
-                allowfullscreen=""
-                data-html-import-id="html-import-120"
-              ></iframe>
+          <div class="video-carousel-wrap">
+            <div class="video-carousel" id="bl-carousel">
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">BL / 01</span>
+                <iframe src="https://drive.google.com/file/d/1p2gTW6HhP6D-glaRf5COCx7RveRYQL7m/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">BL / 02</span>
+                <iframe src="https://drive.google.com/file/d/1XpmK8QtbpabpVuFVRBtRpUHX348goLGE/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">BL / 03</span>
+                <iframe src="https://drive.google.com/file/d/1wPOFsBYEkrzOvGTgADszYrSZ79JORSNg/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">BL / 04</span>
+                <iframe src="https://drive.google.com/file/d/1xUCOLUo9IA7zhoQrTC3XS5sgmOHoFzA1/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+              <div class="video-card is-vertical">
+                <span class="vc-label" style="background: rgba(21,23,26,0.55); color: rgb(201,169,110); font-size: 11px;">BL / 05</span>
+                <iframe src="https://drive.google.com/file/d/1NnH8tsun-Uuv9y4B8WS4i9x0JJ2z7LjF/preview" allow="autoplay" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn" onclick="scrollCarousel('bl-carousel', -1)" aria-label="Previous">&#8592;</button>
+              <div class="carousel-dots" id="bl-dots"></div>
+              <button class="carousel-btn" onclick="scrollCarousel('bl-carousel', 1)" aria-label="Next">&#8594;</button>
             </div>
           </div>
         </div>
@@ -1973,6 +2011,67 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // Carousel logic
+      function initCarousel(carouselId, dotsId) {
+        const carousel = document.getElementById(carouselId);
+        const dotsContainer = document.getElementById(dotsId);
+        if (!carousel || !dotsContainer) return;
+
+        const cards = carousel.querySelectorAll('.video-card');
+        const total = cards.length;
+
+        // Create dots
+        for (let i = 0; i < total; i++) {
+          const dot = document.createElement('div');
+          dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+          dot.addEventListener('click', () => {
+            cards[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+          });
+          dotsContainer.appendChild(dot);
+        }
+
+        // Update dots on scroll
+        carousel.addEventListener('scroll', () => {
+          const scrollLeft = carousel.scrollLeft;
+          const cardWidth = cards[0].offsetWidth + 20;
+          const index = Math.round(scrollLeft / cardWidth);
+          dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === index);
+          });
+        });
+
+        // Drag to scroll
+        let isDown = false, startX, scrollLeftStart;
+        carousel.addEventListener('mousedown', e => {
+          isDown = true;
+          startX = e.pageX - carousel.offsetLeft;
+          scrollLeftStart = carousel.scrollLeft;
+        });
+        carousel.addEventListener('mouseleave', () => isDown = false);
+        carousel.addEventListener('mouseup', () => isDown = false);
+        carousel.addEventListener('mousemove', e => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - carousel.offsetLeft;
+          carousel.scrollLeft = scrollLeftStart - (x - startX);
+        });
+      }
+
+      function scrollCarousel(carouselId, dir) {
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        const card = carousel.querySelector('.video-card');
+        const step = card ? (card.offsetWidth + 20) * 3 : 300;
+        carousel.scrollBy({ left: dir * step, behavior: 'smooth' });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        initCarousel('re-carousel', 're-dots');
+        initCarousel('bl-carousel', 'bl-dots');
+      });
+    </script>
 
     <script data-html-import-id="html-import-166">
       const reveals = document.querySelectorAll(".reveal");
